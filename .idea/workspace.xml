@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0414f27e-99f9-46d4-808d-f4b7243c6111" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/data/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ground.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
     </list>
@@ -36,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\PycharmProjects\Flappy_Bird_Project\data" />
       <recent name="C:\Users\Максим\PycharmProjects\Git_Project\data" />
     </key>
   </component>
