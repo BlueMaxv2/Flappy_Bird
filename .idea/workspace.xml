@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0414f27e-99f9-46d4-808d-f4b7243c6111" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/data/bird_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/bird_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/bird_3.png" afterDir="false" />
+    <list default="true" id="0414f27e-99f9-46d4-808d-f4b7243c6111" name="Changes" comment="Third commit&#10;Изменен спрайт птицы, добавлена анимация">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
     </list>
@@ -166,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673618691222</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Third commit&#10;Изменен спрайт птицы, добавлена анимация">
+      <created>1674220984333</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674220984333</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +187,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="Third commit&#10;Изменен спрайт птицы, добавлена анимация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third commit&#10;Изменен спрайт птицы, добавлена анимация" />
   </component>
 </project>

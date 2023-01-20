@@ -18,12 +18,12 @@ class Bird(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
         self.frames = []
-        self.frame_num = 0
+        self.cur_frame = 0
         self.counter = 0
         for i in range(1, 4):
             img = pygame.image.load(f'data/bird_{i}.png')
             self.frames.append(img)
-        self.image = self.frames[self.frame_num]
+        self.image = self.frames[self.cur_frame]
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
 
@@ -32,10 +32,10 @@ class Bird(pygame.sprite.Sprite):
         self.counter += 1
         if self.counter > anim_cd:
             self.counter = 0
-            self.frame_num += 1
-            if self.frame_num >= len(self.frames):
-                self.frame_num = 0
-        self.image = self.frames[self.frame_num]
+            self.cur_frame += 1
+            if self.cur_frame >= len(self.frames):
+                self.cur_frame = 0
+        self.image = self.frames[self.cur_frame]
 
 
 b_group = pygame.sprite.Group()
