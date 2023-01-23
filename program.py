@@ -17,6 +17,7 @@ sky.fill(pygame.Color('#00a2e8'))
 class Bird(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
+        self.pressed = False
         self.frames = []
         self.cur_frame = 0
         self.counter = 0
@@ -26,8 +27,20 @@ class Bird(pygame.sprite.Sprite):
         self.image = self.frames[self.cur_frame]
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
+        self.fma = 0
 
     def update(self):
+        self.fma += 0.5
+        if self.fma > 9:
+            self.fma = 9
+        if self.rect.bottom < 794:
+            self.rect.y += int(self.fma)
+        if pygame.mouse.get_pressed()[0] == 1 and self.pressed is False:
+            self.fma -= 12
+            self.pressed = True
+        if pygame.mouse.get_pressed()[0] == 0:
+            self.pressed = False
+
         anim_cd = 7
         self.counter += 1
         if self.counter > anim_cd:
