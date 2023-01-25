@@ -6,12 +6,14 @@ size = width, height = 580, 500
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption('Flappy Game')
 clock = pygame.time.Clock()
-FPS = 75
+FPS = 60
 bg_pos = 0
 bg_speed = 3
 game_over = False
+can_fly = True
 pipe_gap = 150
-
+score = 0
+scorer = False
 bg = pygame.image.load('data/ground.png')
 sky = pygame.Surface([612, 403])
 sky.fill(pygame.Color('#00a2e8'))
@@ -40,7 +42,7 @@ class Bird(pygame.sprite.Sprite):
             self.fma = 9
         if self.rect.bottom < 394:
             self.rect.y += int(self.fma)
-        if pygame.mouse.get_pressed()[0] == 1 and self.pressed is False:
+        if pygame.mouse.get_pressed()[0] == 1 and self.pressed is False and can_fly is True:
             self.fma -= 12
             self.pressed = True
         if pygame.mouse.get_pressed()[0] == 0:
@@ -69,7 +71,8 @@ class Pipe(pygame.sprite.Sprite):
             self.rect.topleft = [x, y + int(pipe_gap / 2)]
 
     def update(self):
-        self.rect.x -= bg_speed
+        if not game_over:
+            self.rect.x -= bg_speed
         if self.rect.x <= -width:
             self.kill()
 
@@ -87,6 +90,18 @@ while running:
     p_group.draw(screen)
     p_group.update()
     screen.blit(bg, (bg_pos, 400))
+    if len(p_group) > 0:
+        if b_group.sprites()[0].rect.left > p_group.sprites()[0].rect.left and b_group.sprites()[0].rect.right < \
+                p_group.sprites()[0].rect.right and scorer is not True:
+            scorer = True
+        if scorer is True:
+            if b_group.sprites()[0].rect.left > p_group.sprites()[0].rect.right:
+                score += 1
+                scorer = False
+    if pygame.sprite.groupcollide(b_group, p_group, False, False) or bird.rect.top < 0:
+        game_over = True
+        can_fly = False
+        print(score)
     if not game_over:
         bg_pos -= bg_speed
         timer = 120
