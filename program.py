@@ -14,6 +14,7 @@ can_fly = True
 pipe_gap = 150
 score = 0
 scorer = False
+font = pygame.font.SysFont('leelawadeeui', 65)
 bg = pygame.image.load('data/ground.png')
 sky = pygame.Surface([612, 403])
 sky.fill(pygame.Color('#00a2e8'))
@@ -77,6 +78,11 @@ class Pipe(pygame.sprite.Sprite):
             self.kill()
 
 
+def score_text(text, font, text_color, x, y):
+    img = font.render(text, True, text_color)
+    screen.blit(img, (x, y))
+
+
 b_group = pygame.sprite.Group()
 p_group = pygame.sprite.Group()
 bird = Bird(100, height / 2)
@@ -95,13 +101,12 @@ while running:
                 p_group.sprites()[0].rect.right and scorer is not True:
             scorer = True
         if scorer is True:
-            if b_group.sprites()[0].rect.left > p_group.sprites()[0].rect.right:
+            if b_group.sprites()[0].rect.left > p_group.sprites()[0].rect.right and game_over == False:
                 score += 1
-                scorer = False
+    score_text(str(score), font, (0, 0, 0), 20, 400)
     if pygame.sprite.groupcollide(b_group, p_group, False, False) or bird.rect.top < 0:
         game_over = True
         can_fly = False
-        print(score)
     if not game_over:
         bg_pos -= bg_speed
         timer = 120
