@@ -5,4 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 3.10 (Проект1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="C:\Users\Максим\PycharmProjects\Flappy_Bird_Project\program.py" />
+  </component>
 </module>
