@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0414f27e-99f9-46d4-808d-f4b7243c6111" name="Changes" comment="Seventh commit&#10;Добавлен счетчик очков">
-      <change afterPath="$PROJECT_DIR$/Пояснительная записка.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Git_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Git_Project.iml" afterDir="false" />
+    <list default="true" id="0414f27e-99f9-46d4-808d-f4b7243c6111" name="Changes" comment="Eighth commit&#10;Добавлен рестарт, пояснительная записка, тех. задание, презентация">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/result.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/result.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Пояснительная записка.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Пояснительная записка.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674658001792</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Eighth commit&#10;Добавлен рестарт, пояснительная записка, тех. задание, презентация">
+      <created>1674753986958</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674753986958</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +237,7 @@
     <MESSAGE value="Fifth commit&#10;Изменен спрайт птицы, изменено расширение окна игры, добавлены трубы" />
     <MESSAGE value="Sixth commit&#10;Добавлена колизия объектов" />
     <MESSAGE value="Seventh commit&#10;Добавлен счетчик очков" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seventh commit&#10;Добавлен счетчик очков" />
+    <MESSAGE value="Eighth commit&#10;Добавлен рестарт, пояснительная записка, тех. задание, презентация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eighth commit&#10;Добавлен рестарт, пояснительная записка, тех. задание, презентация" />
   </component>
 </project>
